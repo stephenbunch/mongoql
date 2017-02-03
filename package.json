@@ -1,0 +1,32 @@
+{
+  "name": "mongoql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Stephen Bunch",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^18.1.1",
+    "@types/mongodb": "^2.1.37",
+    "@types/node": "^7.0.4",
+    "jest": "^18.1.0",
+    "mongo-oplog": "^2.0.2",
+    "mongodb": "^2.2.22",
+    "ts-jest": "^18.0.2",
+    "typescript": "^2.1.5"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "ts"
+    ],
+    "transform": {
+      ".ts": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testResultsProcessor": "<rootDir>/node_modules/ts-jest/coverageprocessor.js",
+    "testRegex": "\\.spec\\.ts$"
+  }
+}

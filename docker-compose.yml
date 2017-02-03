@@ -1,0 +1,9 @@
+version: '2'
+services:
+  mongo:
+    image: mongo:3.4
+    volumes:
+      - .mongodata:/data/db
+    ports:
+      - 37017:27017
+    command: mongod --replSet rs
